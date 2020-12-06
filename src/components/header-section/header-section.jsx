@@ -5,9 +5,9 @@ import HeaderIntro from '../header-intro/header-intro';
 
 export default function HeaderSection() {
   return (
-    <>
+    <section id="header">
       <NavBar />
       <HeaderIntro />
-    </>
+    </section>
   );
 }

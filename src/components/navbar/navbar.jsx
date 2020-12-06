@@ -7,16 +7,11 @@ const NavBar = () => {
   const [navBack,setNavBack] = useState('trans-bg');
   
   const checkSize = () => {
-    console.log(window.scrollY);
     if (window.scrollY < 10) {
       setNavBack('trans-bg');
     } else {
       setNavBack('navbar-reduce');
     }
-  }
-
-  const handleClick = () => {
-    setNavBack('navbar-reduce');
   }
 
   useEffect(() => {
@@ -30,7 +25,7 @@ const NavBar = () => {
     <Navbar expand="md" fixed="top" className={navBack}>
       <Container>
         <Navbar.Brand href="#home">DevFolio</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleClick}>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setNavBack('navbar-reduce')}>
           <span></span>
           <span></span>
           <span></span>

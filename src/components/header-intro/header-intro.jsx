@@ -26,7 +26,7 @@ const HeaderIntro = () => (
               backDelay={2000}
               loop
             />
-            {'>'}
+            {'/>'}
             </span>
           </p>
         </Container>

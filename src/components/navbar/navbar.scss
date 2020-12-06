@@ -5,14 +5,34 @@
   transition: all .5s ease-in-out;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
-
+  &.trans-bg {
+    background-color: transparent;
+    .navbar-brand:visited {
+      color: #fff;
+    }
+    .navbar-nav .nav-link {
+      color:#fff;
+      &:visited {
+        color:#fff;
+      }
+    }
+    .navbar-toggler span {
+      background-color: #fff;
+    }
+  }
+  .reg-bg {
+    background-color: #fff;
+  }
   &.navbar-reduce {
     box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
     transition: all .5s ease-in-out;
     background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    
   }
+  // Hamburger
   .navbar-toggler {
     position: relative;
     border:none;
@@ -85,6 +105,26 @@
       font-size: 1rem;
       margin-right: 20px;
       text-transform: uppercase;
+      position: relative;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        margin-left: 0px;
+        width: 0%;
+        bottom: 0;
+        left: .5rem;
+        height: 2px;
+        transition: all 500ms ease;
+        background-color: #fff;
+        @media (max-width:781px) {
+          & {
+            left: 0;
+          }
+        }
+      }
+      
+      
       &:visited {
         color: var(--color-primary);
 
@@ -92,26 +132,18 @@
 
       &:hover {
         color: var(--color-primary);
+        &::before {
+          width: 35px;
+        }
+      }
+    }
+  }
+  &.navbar-reduce {
+    .nav-link {
+      &::before {
+        background-color: var(--color-primary);
       }
     }
   }
 }
 
-.trans-bg {
-  background-color: transparent;
-  .navbar-brand:visited {
-    color: #fff;
-  }
-  .navbar-nav .nav-link {
-    color:#fff;
-    &:visited {
-      color:#fff;
-    }
-  }
-  .navbar-toggler span {
-    background-color: #fff;
-  }
-}
-.reg-bg {
-  background-color: #fff;
-}
