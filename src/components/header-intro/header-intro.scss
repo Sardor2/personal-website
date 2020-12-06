@@ -1,0 +1,41 @@
+.intro {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background-image: url(../../img/bg5.jpg);
+
+  .overlay-intro {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+  }
+
+  .intro-content {
+    text-align: center;
+    position: absolute;
+  }
+  .intro-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 4.5rem;
+  }
+  .intro-subtitle {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  
+  @media (max-width:770px) {
+    .intro-title {
+      font-size:3rem;
+    }
+    .intro-subtitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+  }
+}
