@@ -57,7 +57,7 @@ a:hover {
   background-position: center center;
 }
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: val(--color-primary);
   position: absolute;
   top: 0;
   left: 0px;

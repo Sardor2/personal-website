@@ -5,7 +5,7 @@ import HeaderIntro from '../header-intro/header-intro';
 
 export default function HeaderSection() {
   return (
-    <section id="header" className="header bg-image">
+    <section id="header" className="header">
       <NavBar />
       <HeaderIntro />
     </section>
