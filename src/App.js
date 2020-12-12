@@ -2,6 +2,7 @@ import React, {useEffect,useState} from 'react';
 import HeaderSection from './components/header-section/header-section.jsx';
 import './App.scss';
 import Preloader from './components/preloader/preloader';
+import AboutSection from './components/about-section/about-section';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className="App">
       <HeaderSection />
+      <AboutSection />
       {
         loader ? <Preloader />: null
       }
