@@ -9,7 +9,7 @@ const data = [
   'Back-end'
 ];
 const HeaderIntro = () => (
-  <div className="intro route bg-image">
+  <div className="intro route">
     <div className="overlay-intro"></div>
     <div className="intro-content display-table">
       <div className="table-cell">
