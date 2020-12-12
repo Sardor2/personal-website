@@ -88,14 +88,9 @@
     color: var(--color-primary);
     font-weight: 600;
     font-size: 1.6rem;
-
-    &:hover {
-      color: var(--color-primary);
-    }
-
+    
     &:visited {
       color: var(--color-primary);
-
     }
   }
   .navbar-nav {

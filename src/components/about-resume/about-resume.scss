@@ -1,3 +1,4 @@
+
 .about-img  {
   margin-bottom: 2rem;
 
@@ -6,8 +7,39 @@
   }
 }
 
+.about-info {
+  span {
+    word-break: break-word;
+  }
+}
+
 .skill-mf {
+  max-width: 300px;
   .title-s {
     font-size: 1.4rem;
+  }
+  .skills {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    @media (min-width:478px) {
+      & {
+        flex-direction: row;
+      }
+    }
+    .skill {
+      font-size: 1.1rem;
+      border: 2px solid var(--color-primary);
+      border-radius: 3px;
+      padding: 2px 4px;
+      margin: 2px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--color-primary);
+        color: var(--color-d);
+      }
+    }
   }
 }

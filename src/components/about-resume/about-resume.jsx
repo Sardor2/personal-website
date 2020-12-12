@@ -22,6 +22,16 @@ const AboutResume = () => (
     </Row>
     <div className="skill-mf">
       <p className="title-s">Superpowers</p>
+      <div className="skills">
+        <span className="skill">Javascript</span>
+        <span className="skill">React</span>
+        <span className="skill">Sass</span>
+        <span className="skill">Bootstrap</span>
+        <span className="skill">Typescript</span>
+        <span className="skill">NestJs</span>
+        <span className="skill">MySql</span>
+        <span className="skill">Git</span>
+      </div>
     </div>
   </>
 );
