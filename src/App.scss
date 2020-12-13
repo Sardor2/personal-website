@@ -39,16 +39,13 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: var(--color-primary);
 }
 
 .color-d {
-  color: #f5f5f5;
+  color: var(--color-d);
 }
 
-.color-text-a {
-  color: #4e4e4e;
-}
 
 .bg-image {
   background-repeat: no-repeat;
@@ -97,7 +94,24 @@ a:hover {
   color: #1e1e1e;
   font-size: 1.1rem;
 }
+.title-a {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.subtitle-a {
+  color: var(--color-text-a);
+}
+.line-mf {
+  width: 40px;
+  height: 5px;
+  background-color: var(--color-primary);
+  margin: 0 auto;
+}
 /*--/ Title Left /--*/
+.title-box {
+  margin-bottom: 4rem;
+}
 .title-box-2 {
   margin-bottom: 3rem;
 }
@@ -114,4 +128,16 @@ a:hover {
   background-color: var(--color-primary);
   width: 100px;
   bottom: -12px;
+}
+
+.ico-circle {
+  height: 100px;
+  width: 100px;
+  font-size: 2rem;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px var(--color-primary);
+  display: block;
 }

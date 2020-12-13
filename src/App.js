@@ -3,6 +3,7 @@ import HeaderSection from './components/header-section/header-section.jsx';
 import './App.scss';
 import Preloader from './components/preloader/preloader';
 import AboutSection from './components/about-section/about-section';
+import ServicesSection from './components/services-section/services-section';
 
 
 function App() {
@@ -12,10 +13,12 @@ function App() {
       SetLoader(false);
     },2000);
   },[]);
+  
   return (
     <div className="App">
       <HeaderSection />
       <AboutSection />
+      <ServicesSection />
       {
         loader ? <Preloader />: null
       }

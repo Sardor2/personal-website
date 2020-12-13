@@ -1,0 +1,16 @@
+.services {
+  .title-box {
+    text-align: center;
+  }
+  .ico-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .service-icon {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  
+}

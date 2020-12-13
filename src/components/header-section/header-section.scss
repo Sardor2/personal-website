@@ -1,8 +1,13 @@
 .header {
-  background-image: url(../../img/bg3.jpg);
+  background-image: url(../../img/bg1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
-  background-position-x: center;
+  background-position:top;
+
+  @media (max-width: 1024px) {
+    & {
+      background-attachment: scroll;
+    }
+  }
 }
