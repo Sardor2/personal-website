@@ -1,0 +1,41 @@
+.work-box {
+  margin-bottom: 3rem;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+
+  &:hover .work-img img {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+  }
+
+  .work-img {
+    display:block;
+    overflow: hidden;
+
+    img {
+      transition: all 1s ease;
+    }
+  }
+
+  .work-content {
+    padding: 2rem 3% 1rem 4%;
+    
+    .w-more {
+      color: var(--color-text-a);
+      font-size: .8rem;
+      .w-category {
+        color: var(--color-primary);
+      }
+    }
+    .w-like {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      float: right;
+    }
+    .w-title {
+      font-size: 1.2rem;
+    }
+  }
+}

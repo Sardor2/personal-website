@@ -1,17 +1,17 @@
 import React from 'react';
-import './services-section.scss';
-import ServiceBox from '../service-box/service-box';
-import {Container,Row,Col} from 'react-bootstrap';
-import {ServicesData} from '../../data/services-data';
+import './portfolio-section.scss';
+import {Row,Col,Container} from 'react-bootstrap';
+import WorkBox from '../work-box/work-box';
+import works from '../../data/portfolio-data';
 
-const ServicesSection = () => (
-  <section id="services" className="services">
+const PortfolioSection = () => (
+  <section id="work" className="portfolio-section">
     <Container>
       <Row>
         <Col sm={12}>
           <div className="title-box">
             <h3 className="title-a">
-              Services
+              Portfolio
             </h3>
             <p className="subtitle-a">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -20,14 +20,13 @@ const ServicesSection = () => (
           </div>
         </Col>
       </Row>
-
       <Row>
         {
-          ServicesData.map((service,index) => <ServiceBox key={index} {...service} />)
+          works.map((project,index) => <WorkBox key={index} {...project} />)
         }
       </Row>
     </Container>
   </section>
 );
 
-export default ServicesSection;
+export default PortfolioSection;

@@ -4,6 +4,7 @@ import './App.scss';
 import Preloader from './components/preloader/preloader';
 import AboutSection from './components/about-section/about-section';
 import ServicesSection from './components/services-section/services-section';
+import PortfolioSection from './components/portfolio-section/portfolio-section';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <HeaderSection />
       <AboutSection />
       <ServicesSection />
+      <PortfolioSection />
       {
         loader ? <Preloader />: null
       }

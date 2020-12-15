@@ -7,8 +7,14 @@
   padding-bottom: 1.563rem;
   &.trans-bg {
     background-color: transparent;
-    .navbar-brand:visited {
+    .navbar-brand {
       color: #fff;
+      &:visited {
+        color: #fff;
+      }
+      &:hover {
+        color: #fff;
+      }      
     }
     .navbar-nav .nav-link {
       color:#fff;
@@ -29,8 +35,6 @@
     background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
-
-    
   }
   // Hamburger
   .navbar-toggler {
