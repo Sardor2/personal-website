@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import {Navbar,Container,Nav} from 'react-bootstrap';
 import './navbar.scss';
+import {FaReact} from 'react-icons/fa';
 
 const NavBar = () => {
 
@@ -24,7 +25,7 @@ const NavBar = () => {
   return (
     <Navbar expand="md" fixed="top" className={navBack}>
       <Container>
-        <Navbar.Brand href="#home">DevFolio</Navbar.Brand>
+        <Navbar.Brand href="#home"><FaReact /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setNavBack('navbar-reduce')}>
           <span></span>
           <span></span>

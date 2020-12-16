@@ -92,6 +92,9 @@
     color: var(--color-primary);
     font-weight: 600;
     font-size: 1.6rem;
+    svg {
+      font-size: 3rem;
+    }
     
     &:visited {
       color: var(--color-primary);

@@ -2,32 +2,36 @@ import React from 'react';
 import './work-box.scss';
 import {Col,Row,Image} from 'react-bootstrap';
 import {BsPlusCircle} from 'react-icons/bs';
+import {FaGithub} from 'react-icons/fa';
 
-const WorkBox = ({image,title,category,date}) => {
+const WorkBox = ({image,title,category,date,link,src_code}) => {
   return (
     <Col md={4}>
       <div className="work-box">
-        <a href="portfolio">
           <div className="work-img">
             <Image src={image} alt="work-image" fluid/>
           </div>
           <div className="work-content">
             <Row>
-              <Col sm={8}>
+              <Col sm={7}>
                 <h2 className="w-title">{title}</h2>
                 <div className="w-more">
                   <span className="w-category">{category} </span>
                   <span className="w-date">/ {date} </span>
                 </div>
               </Col>
-              <Col sm={4}>
+              <Col sm={5}>
                 <div className="w-like">
-                  <BsPlusCircle />
+                  <a href={link} target="_blank" rel="noreferrer" className="project-link">
+                    <BsPlusCircle />
+                  </a>
+                  <a href={src_code} target="_blank" rel="noreferrer" className="project-link">
+                    <FaGithub />
+                  </a>
                 </div>
               </Col>
             </Row>
           </div>
-        </a>
       </div>
       
     </Col>
