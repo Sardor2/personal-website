@@ -92,6 +92,7 @@
     color: var(--color-primary);
     font-weight: 600;
     font-size: 1.6rem;
+    animation: animate-preloader 10s linear infinite;
     svg {
       font-size: 3rem;
     }
@@ -129,7 +130,7 @@
       
       &:visited {
         color: var(--color-primary);
-
+    
       }
 
       &:hover {
@@ -149,3 +150,14 @@
   }
 }
 
+@keyframes animate-brand {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+} 

@@ -33,7 +33,13 @@ a:hover {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
-
+.box-shadow,
+.paralax-mf,
+.service-box,
+.work-box,
+.card-blog {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
 .p-r {
   position: relative;
 }
@@ -54,7 +60,7 @@ a:hover {
   background-position: center center;
 }
 .overlay-mf {
-  background-color: val(--color-primary);
+  background-color: var(--color-primary);
   position: absolute;
   top: 0;
   left: 0px;

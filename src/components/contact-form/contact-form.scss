@@ -1,0 +1,18 @@
+.contact-form {
+  .btn {
+    background-color: var(--color-primary);
+    padding:.9rem 2.3rem;
+    font-size:1.2rem;
+    border-radius: 5rem;
+    color: #fff;
+    transition: all .1s linear;
+    &:hover {
+      background-color: var(--color-secondary);
+      border-color: var(--color-secondary);
+    }
+    &:active {
+      transform: translateY(-10px);
+      box-shadow: 0 .5rem 1rem rgba(#000,.3);
+    }
+  }
+}
