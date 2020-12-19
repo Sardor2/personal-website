@@ -4,7 +4,13 @@
   margin-top: 4rem;
   padding-top: 4rem;
   position: relative;
-
+  background: var(--color-primary);
+  background: -webkit-linear-gradient(top left, var(--color-primary), #6FDEFF);
+  background: -moz-linear-gradient(top left, var(--color-primary), #6FDEFF);
+  background: linear-gradient(to bottom right, var(--color-primary), #6FDEFF);
+  .overlay-mf {
+    opacity: 0;
+  }
   .contact-mf {
     margin-top: 4rem;
   }

@@ -92,11 +92,14 @@
     color: var(--color-primary);
     font-weight: 600;
     font-size: 1.6rem;
+    cursor: pointer;
     animation: animate-preloader 10s linear infinite;
     svg {
       font-size: 3rem;
     }
-    
+    &:hover {
+      color: var(--color-primary)
+    }
     &:visited {
       color: var(--color-primary);
     }
@@ -110,6 +113,10 @@
       text-transform: uppercase;
       position: relative;
       
+      &:focus {
+        opacity: 1;
+        color: var(--color-primary)
+      }
       &::before {
         content: '';
         position: absolute;

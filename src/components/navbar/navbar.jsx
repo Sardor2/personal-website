@@ -26,7 +26,9 @@ const NavBar = () => {
   return (
     <Navbar expand="md" fixed="top" className={navBack}>
       <Container>
-        <Navbar.Brand href="#home"><FaReact /></Navbar.Brand>
+        <Link to="home" className="navbar-brand" smooth={true} duration={1000}>
+          <FaReact />
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setNavBack('navbar-reduce')}>
           <span></span>
           <span></span>
@@ -35,13 +37,13 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav className="ml-auto justify-content-space-between">
        
-            <Nav.Link href="#home">  
+            <Link className="nav-link" href="#home" to="home" smooth={true} duration={1000}>  
               Home
-            </Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#services">Services</Nav.Link>
-            <Nav.Link href="#work">Work</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            </Link>
+            <Link className="nav-link" to="about" smooth={true} duration={1000} href="#about">About</Link>
+            <Link className="nav-link" to="services" smooth={true} duration={1000} href="#services">Services</Link>
+            <Link className="nav-link" to="work" smooth={true} duration={1000} href="#work">Work</Link>
+            <Link className="nav-link" to="contact" smooth={true} duration={1000} href="#contact">Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
