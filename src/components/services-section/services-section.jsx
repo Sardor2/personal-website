@@ -14,7 +14,7 @@ const ServicesSection = () => (
               Services
             </h3>
             <p className="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Here are the Services I offer
             </p>
             <div className="line-mf"></div>
           </div>

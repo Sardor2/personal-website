@@ -6,32 +6,22 @@ import {IoIosBrush,IoMdStats} from 'react-icons/io';
 export const ServicesData = [
   {
     title: 'Web Development',
-    description:'Nunc et risus id ligula consequat maximus. Vestibulum semper lacus eget tempus condimentum.',
+    description:'If you are a start-up that seeks a website,I can make you a fully-functional website in no time.',
     icon: <FiCode />
   },
   {
     title: 'Web Design',
-    description:'Nunc et risus id ligula consequat maximus. Vestibulum semper lacus eget tempus condimentum. ',
+    description:'I work with a designer friend of mine,He is an expert UI/UX designer who can design a website for you',
     icon: <DiAppstore />
   },
   {
     title: 'Responsive Development',
-    description:'Nunc et risus id ligula consequat maximus. Vestibulum semper lacus eget tempus condimentum. ',
+    description:'I develop responsive websites that can work well in different screen sizes',
     icon: <FaMobileAlt />
   },
   {
     title:'SEO',
-    description: 'Nunc et risus id ligula consequat maximus. Vestibulum semper lacus eget tempus',
+    description: 'Having a website appear on the fron lines of Google Searches is crucial to your business.',
     icon: <FiSearch />
-  },
-  {
-    title:'Graphic Design',
-    description:'Nunc et risus id ligula consequat maximus. Vestibulum ',
-    icon: <IoIosBrush />
-  },
-  {
-    title: 'Marketing Services',
-    description: 'Nunc et risus id ligula consequat maximus. Vestibulum',
-    icon: <IoMdStats />
   }
 ]

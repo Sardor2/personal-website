@@ -2,6 +2,9 @@ import React from 'react';
 import './about-resume.scss';
 import {Row,Col,Image} from 'react-bootstrap';
 import ResumeImage from '../../img/resume-img.jpg';
+import aboutMe from '../../data/about-me-data';
+
+const {name,profile,email,phone,skills} = aboutMe;
 
 const AboutResume = () => (
   <>
@@ -13,24 +16,19 @@ const AboutResume = () => (
       </Col>
       <Col sm={6} md={7}>
         <div className="about-info">
-          <p><span className="title-s">Name : </span> <span>Sardor Abdurakhimov</span></p>
-          <p><span className="title-s">Profile : </span> <span>Full-Stack Developer</span></p>
-          <p><span className="title-s">Email : </span> <span>abdurakhimov.sardor@gmail.com</span></p>
-          <p><span className="title-s">Phone : </span> <span>99 803 52 19</span></p>
+          <p><span className="title-s">Name : </span> <span>{name}</span></p>
+          <p><span className="title-s">Profile : </span> <span>{profile}</span></p>
+          <p><span className="title-s">Email : </span> <span>{email}</span></p>
+          <p><span className="title-s">Phone : </span> <span>{phone}</span></p>
         </div>
       </Col>
     </Row>
     <div className="skill-mf">
       <p className="title-s">Superpowers</p>
       <div className="skills">
-        <span className="skill">Javascript</span>
-        <span className="skill">React</span>
-        <span className="skill">Sass</span>
-        <span className="skill">Bootstrap</span>
-        <span className="skill">Typescript</span>
-        <span className="skill">NestJs</span>
-        <span className="skill">MySql</span>
-        <span className="skill">Git</span>
+        {
+          skills.map((s,i) => <span key={i} className="skill">{s}</span>)
+        }
       </div>
     </div>
   </>

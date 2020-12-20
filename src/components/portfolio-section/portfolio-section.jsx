@@ -14,7 +14,7 @@ const PortfolioSection = () => (
               Portfolio
             </h3>
             <p className="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Here are some of latest projects
             </p>
             <div className="line-mf"></div>
           </div>

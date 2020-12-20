@@ -16,10 +16,9 @@ const ContactDetails = () => (
 
     <div className="more-info">
       <p className="lead">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
-          expedita aperiam aliquid at.
-          Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
-          mollitia inventore?
+          if you would like to get in touch with me please use the following.I'am available
+          24/7 in any of these social Media such as Telegram,Instagram,Github,Linkedin.Though, I'm 
+          mostly in Telegram so you might wanna consider that.
       </p>
       <ul className="list-ico">
         <li><span><ImLocation /></span> Katta Qani 4 street,Uchtepa District,Tashkent</li>
