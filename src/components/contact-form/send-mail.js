@@ -4,9 +4,9 @@ import mailgun from 'mailgun-js';
 
 export default function sendMail(sender,subject,body) {
     console.log('sending mail');
-    const key = '72da48fdc46d53018c1acbfbccd51d14-203ef6d0-daca3a8a';
+    const k = '72da48fdc46d53018c1acbfbccd51d14-203ef6d0-daca3a8a';
     const domain = 'sandbox3548d9c5e53946edaa3ca53c9267f4ad.mailgun.org';
-    const mg = mailgun({apiKey:key,domain:domain});
+    const mg = mailgun({apiKey:k,domain:domain});
     const data = {
       from: sender,
       to: 'abdurakhimov.sardor@gmail.com',
