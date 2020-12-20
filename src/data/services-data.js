@@ -1,7 +1,6 @@
 import {FiCode,FiSearch} from 'react-icons/fi';
 import {FaMobileAlt} from 'react-icons/fa';
 import {DiAppstore} from 'react-icons/di';
-import {IoIosBrush,IoMdStats} from 'react-icons/io';
 
 export const ServicesData = [
   {
