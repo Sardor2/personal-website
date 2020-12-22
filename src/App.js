@@ -6,6 +6,7 @@ import AboutSection from './components/about-section/about-section';
 import ServicesSection from './components/services-section/services-section';
 import PortfolioSection from './components/portfolio-section/portfolio-section';
 import ContactSection from './components/contact-section/contact-section';
+import ChatBox from './components/chat-box/chat-box';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <ServicesSection />
       <PortfolioSection />
       <ContactSection />
+      <ChatBox />
       {
         loader ? <Preloader />: null
       }
