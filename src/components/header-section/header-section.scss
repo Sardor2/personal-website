@@ -1,13 +1,14 @@
 .header {
-  background-image: url(https://unsplash.com/photos/P2SkP_PXhlU/download?force=true);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position:center;
+  position: relative;
 
   @media (max-width: 1024px) {
     & {
       background-attachment: scroll;
     }
   }
+  
 }
