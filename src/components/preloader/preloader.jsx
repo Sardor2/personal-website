@@ -1,6 +1,5 @@
 import React,{useEffect,useState} from 'react';
 import './preloader.scss';
-import {FaReact} from 'react-icons/fa';
 
 const Preloader = () => {
   const [trans,setTrans] = useState('');
@@ -13,7 +12,7 @@ const Preloader = () => {
   
   return (
     <div  className={`preloader ${trans}`}>
-      <FaReact />
+      <div className="circle"></div>
     </div>
   );
 }

@@ -12,8 +12,6 @@ const AboutText = () => (
       <p className="lead">
         {aboutMe.text}
       </p>
-     
-   
   </div>
 );
 

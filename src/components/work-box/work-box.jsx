@@ -1,7 +1,7 @@
 import React from 'react';
 import './work-box.scss';
 import {Col,Row,Image} from 'react-bootstrap';
-import {BsPlusCircle} from 'react-icons/bs';
+import {BsLink45Deg} from 'react-icons/bs';
 import {FaGithub} from 'react-icons/fa';
 
 const WorkBox = ({image,title,category,date,link,src_code}) => {
@@ -23,7 +23,7 @@ const WorkBox = ({image,title,category,date,link,src_code}) => {
               <Col sm={5}>
                 <div className="w-like">
                   <a href={link} target="_blank" rel="noreferrer" className="project-link">
-                    <BsPlusCircle />
+                    <BsLink45Deg />
                   </a>
                   <a href={src_code} target="_blank" rel="noreferrer" className="project-link">
                     <FaGithub />
