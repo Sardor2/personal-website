@@ -2,11 +2,12 @@ import React from 'react';
 import './about-resume.scss';
 import {Row,Col,Image} from 'react-bootstrap';
 import ResumeImage from '../../img/resume-img.jpg';
-import aboutMe from '../../data/about-me-data';
+import {useGlobalContext} from '../../context';
 
-const {name,profile,email,phone,skills} = aboutMe;
-
-const AboutResume = () => (
+const AboutResume = () => {
+  const {aboutMeData} = useGlobalContext();
+  const {name,profile,email,phone,skills} = aboutMeData;
+  return (
   <>
     <Row>
       <Col sm={6} md={5}>
@@ -32,6 +33,6 @@ const AboutResume = () => (
       </div>
     </div>
   </>
-);
+)};
 
 export default AboutResume;

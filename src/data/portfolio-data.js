@@ -2,6 +2,8 @@ import img1 from '../img/covid19.JPG';
 import img2 from '../img/keeper.JPG';
 import img3 from '../img/royal.jpg';
 
+export const images = [img1,img2,img3];
+
 const works = [
   {
     title: 'Corona Tracker',
