@@ -1,6 +1,6 @@
 import firebase from 'firebase/app';
 import 'firebase/firestore';
-
+import { Icons } from "../data/services-icons";
 
 const config = {
   apiKey: "AIzaSyB-rdI3mXZdBFS1SrkGFfCNxtis4feW3OE",
@@ -16,18 +16,6 @@ firebase.initializeApp(config);
 
 export const firestore = firebase.firestore();
 
-// export const getUsers = async () => {
-//   const userRef = firestore.collection('users');
-//   const userSnapshot = await userRef.get();
-//   const cartRef = firestore.collection(`users/${userSnapshot.docs[0].id}/cartItems`);
-//   const cartSnapshot = await cartRef.get();
-//   console.log(cartSnapshot.docs[0].data());
-//   if (!userSnapshot.empty) {
-//     console.log(userSnapshot.docs[0].data())
-//   } else {
-//     console.log('error')
-//   }
-// }
 
 export const addColletionsAndDocuments = async (collectionName,objectsToAdd) => {
   const collectionRef = firestore.collection(collectionName);
@@ -45,6 +33,24 @@ export const fetchAboutData = async () => {
   const aboutSnapshot = await aboutRef.get();
   let result = aboutSnapshot.docs[0].data();
   return result;
+}
+
+export const fetchServiceData = async () => {
+  const serviceRef = firestore.collection('service-data');
+  const serviceSnapshot = await serviceRef.get();
+  let result = serviceSnapshot.docs[0].data();
+  return Object.values(result)[0]
+}
+
+export const modifyServiceData = (data) => {
+  const newUpdatedData = data.map(item => {
+    const {title} = item;
+    return {
+      ...item,
+      icon: Icons[title.toLowerCase().replace(/ /g, '-')]
+    }
+  })
+  return newUpdatedData;
 }
 
 export default firebase;

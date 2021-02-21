@@ -1,10 +1,9 @@
-
-
 .navbar {
   background-color: #fff;
   transition: all .5s ease-in-out;
   padding-top: 1.563rem;
   padding-bottom: 1.563rem;
+  
   &.trans-bg {
     background-color: transparent;
     .navbar-brand {
@@ -18,8 +17,9 @@
     }
     .navbar-nav .nav-link {
       color:#fff;
-      &:visited {
-        color:#fff;
+
+      &:hover,&:visited,&:focus {
+        color: #fff;
       }
     }
     .navbar-toggler span {
@@ -112,7 +112,9 @@
       margin-right: 20px;
       text-transform: uppercase;
       position: relative;
-      
+      &:hover {
+        color: var(--color-primary)
+      }
       &:focus {
         opacity: 1;
         color: var(--color-primary)
@@ -136,12 +138,11 @@
       
       
       &:visited {
-        color: var(--color-primary);
-    
+        color: #fff;
       }
 
       &:hover {
-        color: var(--color-primary);
+        color: #fff;
         &::before {
           width: 35px;
         }
@@ -149,7 +150,11 @@
     }
   }
   &.navbar-reduce {
-    .nav-link {
+    
+    .navbar-nav .nav-link {
+      &:hover {
+        color:var(--color-primary)
+      }
       &::before {
         background-color: var(--color-primary);
       }

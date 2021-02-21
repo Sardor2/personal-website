@@ -1,25 +1,29 @@
 import React,{useState,useContext} from 'react';
-import {fetchAboutData} from './firebase/firebase.utils'
+import {fetchAboutData,fetchServiceData,modifyServiceData} from './firebase/firebase.utils'
 
 const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
   const [isLoading,setIsLoading] = useState(true);
   const [aboutMeData,setAboutMeData] = useState({});
+  const [servicesData,setServicesData] = useState([]);
 
   const setIsLoadingFalse = () => {
     setIsLoading(false);
   }
-  const getAppData = async () => {
+
+  const getAllData = async () => {
     setAboutMeData(await fetchAboutData());
+    const data = await fetchServiceData();
+    setServicesData(modifyServiceData(data));
     setIsLoading(false);
   }
   const state = {
     isLoading,
-    setIsLoadingFalse,
     aboutMeData,
     setAboutMeData,
-    getAppData
+    getAllData,
+    servicesData
   }
   return <AppContext.Provider value={state} >
     {children}
